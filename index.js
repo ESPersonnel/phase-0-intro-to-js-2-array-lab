@@ -18,9 +18,11 @@ const destructivelyRemoveFirstCat = () => {
 const appendCat = (name) => {
     return cats.concat(name)
 }
+
 const prependCat = (name) => {
-    return cats.unshift(name)
+    return [name].concat(cats)
 }
+
 const removeLastCat = () => {
     return cats.slice(0, -1)
 }
